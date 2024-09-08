@@ -1,13 +1,16 @@
-import { A } from '@expo/html-elements'
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { A } from '@expo/html-elements';
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 
 export default function Footer() {
-  return (
-    <View style = {styles.footer}>
-        <Text style = {styles.text}>Made with ❤️. <A href='https://github.com/Artur0412-KU'>Artur0412-KU</A></Text>
-    </View>
-  )
+    return (
+        <View style={styles.footer}>
+            <Text style={styles.text}>
+                Made with ❤️.{' '}
+                <A href="https://github.com/Artur0412-KU">Artur0412-KU</A>
+            </Text>
+        </View>
+    );
 }
 
 const styles = StyleSheet.create({
@@ -15,11 +18,11 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         alignItems: 'center',
         justifyContent: 'center',
-        padding: 20
+        padding: 20,
     },
     text: {
         color: '#fff',
         fontWeight: 'bold',
-        fontSize: 16
-    }
-})
+        fontSize: 16,
+    },
+});
