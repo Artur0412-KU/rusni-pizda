@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         paddingTop: 20,
         flex: 1,
         flexGrow: 10,
-        maxHeight: '40%',
+        maxHeight: '45%',
     },
     title: {
         fontSize: 18,
