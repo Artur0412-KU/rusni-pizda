@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import CalendarComponent from '../../components/calendar/Calendar';
 import Footer from '../../components/footer/Footer';
+import DateInfo from '../../components/calendar/common/DateInfo';
 
 export default function Calendar() {
     return (
         <SafeAreaView style={styles.container}>
-            <CalendarComponent date={'09 вересня 2024'}/>
-            <Footer/>
+            <CalendarComponent />
+            <DateInfo />
+            <Footer />
         </SafeAreaView>
     );
 }

@@ -1,10 +1,10 @@
-import React, {useEffect} from 'react';
+import React, { useEffect } from 'react';
 import { View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Stats from '../../components/statsList/Stats';
 import DonateCarousel from '../../components/carousel/carousel';
 import { StyleSheet, Text } from 'react-native';
-import { useDispatch, UseDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { addStats } from '../../redux/statsSlice';
 
 export default function Home() {
@@ -13,21 +13,21 @@ export default function Home() {
 
     useEffect(() => {
         dispatch(addStats(test));
-    })
+    });
 
     return (
         <View style={styles.container}>
             <View style={styles.textContainer}>
                 <Text style={styles.textSubtitle}>
-                🔥 Генеральний штаб ЗС України інформує
+                    🔥 Генеральний штаб ЗС України інформує
                 </Text>
                 <Text style={styles.title}>
                     Загальні бойові втрати російського окупанта
                 </Text>
             </View>
-            <StatusBar style="light" />
             <Stats />
             <DonateCarousel />
+            <StatusBar style="light" />
         </View>
     );
 }
