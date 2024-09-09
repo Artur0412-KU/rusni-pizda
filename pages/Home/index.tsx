@@ -1,23 +1,30 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { View } from 'react-native';
-import Calendar from '../../components/calendar/Calendar';
 import { StatusBar } from 'expo-status-bar';
 import Stats from '../../components/statsList/Stats';
 import DonateCarousel from '../../components/carousel/carousel';
 import { StyleSheet, Text } from 'react-native';
+import { useDispatch, UseDispatch } from 'react-redux';
+import { addStats } from '../../redux/statsSlice';
 
 export default function Home() {
+    const dispatch = useDispatch();
+    const test = 'test';
+
+    useEffect(() => {
+        dispatch(addStats(test));
+    })
+
     return (
         <View style={styles.container}>
             <View style={styles.textContainer}>
                 <Text style={styles.textSubtitle}>
-                    Генеральний штаб ЗС України інформує
+                🔥 Генеральний штаб ЗС України інформує
                 </Text>
                 <Text style={styles.title}>
                     Загальні бойові втрати російського окупанта
                 </Text>
             </View>
-            <Calendar date="8 вересня 2024" />
             <StatusBar style="light" />
             <Stats />
             <DonateCarousel />
@@ -30,7 +37,7 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#4e4634',
         justifyContent: 'center',
-        paddingTop: 20,
+        paddingTop: 70,
         padding: 10,
     },
     textContainer: {

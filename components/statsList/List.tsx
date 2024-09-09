@@ -43,8 +43,8 @@ const styles = StyleSheet.create({
         padding: 10,
         borderRadius: 15,
         shadowColor: '#000',
-        shadowOpacity: 0.8,
-        shadowRadius: 1,
+        shadowOpacity: 0.1,
+        shadowRadius: 5,
     },
     increaseContainer: {
         flexDirection: 'row',
