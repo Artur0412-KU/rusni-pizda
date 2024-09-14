@@ -45,6 +45,10 @@ For development purposes, you can use the following commands:
 
 ```npm run ios```
 
+## 🌐 API:
+
+- [russianWarship.RIP(https://russianwarship.rip/api-documentation/v2)]
+
 ## 📋 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
