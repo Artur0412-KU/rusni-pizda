@@ -1,10 +1,11 @@
 import Home from './src/pages/Home';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import Calendar from './src/pages/Calendar';
+import Calendar from './src/pages/About';
 import { FontAwesome } from '@expo/vector-icons';
 import { NavigationContainer } from '@react-navigation/native';
 import { Provider } from 'react-redux';
 import { store } from './src/redux/store';
+import About from './src/pages/About';
 
 const Tab = createBottomTabNavigator();
 
@@ -41,13 +42,13 @@ export default function App() {
                         }}
                     />
                     <Tab.Screen
-                        name="Календар"
-                        component={Calendar}
+                        name="Про мене"
+                        component={About}
                         options={{
                             tabBarIcon: ({ color }) => {
                                 return (
                                     <FontAwesome
-                                        name="calendar"
+                                        name="user"
                                         color={color}
                                         size={24}
                                     />
