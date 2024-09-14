@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet } from 'react-native';
 import { Calendar } from 'react-native-calendars';
 import defineLocale from '../../../config/defineLocale';
 import { useDispatch } from 'react-redux';
-import { changeDate } from '../../../../redux/dateSlice';
+import { changeDate } from '../../../redux/dateSlice';
 
 export default function CalendarItem() {
     const [selected, setSelected] = useState('');
