@@ -47,7 +47,7 @@ For development purposes, you can use the following commands:
 
 ## 🌐 API:
 
-- [russianWarship.RIP(https://russianwarship.rip/api-documentation/v2)]
+- [russianWarship.RIP](https://russianwarship.rip/api-documentation/v2)
 
 ## 📋 License
 
