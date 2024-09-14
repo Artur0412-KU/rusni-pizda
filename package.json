@@ -18,6 +18,7 @@
     "@reduxjs/toolkit": "^2.2.7",
     "@types/react": "~18.2.79",
     "apk": "^1.2.0",
+    "axios": "^1.7.7",
     "expo": "~51.0.28",
     "expo-router": "^3.5.23",
     "expo-status-bar": "~1.12.1",
