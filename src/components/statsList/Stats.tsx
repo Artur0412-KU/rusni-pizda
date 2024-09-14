@@ -10,7 +10,7 @@ import {
 // import { data, terms } from '../../data/data';
 import List from './List';
 import { useSelector } from 'react-redux';
-import statsSlice from '../../redux/statsSlice';
+import statsSlice from '../../../redux/statsSlice';
 import { statistics, terms, warInfo } from '../../api/index';
 
 export default function Stats() {
