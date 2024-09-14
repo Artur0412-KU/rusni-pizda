@@ -1,22 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
 import { SvgUri } from 'react-native-svg';
+import { statistics } from '../../api';
 
-export default function List({ item }) {
+export default function List({ image, number, increase, title }) {
+    const [statistInfo, setStatisctInfo] = useState<any[]>([]);
+
     return (
         <View style={styles.listContainer}>
             <View style={styles.image}>
-                <SvgUri uri={item.icon} width={50} height={50} />
+                <SvgUri uri={image} width={50} height={50} />
             </View>
 
             <View style={styles.textContainer}>
                 <View style={styles.increaseContainer}>
                     <Text style={styles.title} numberOfLines={2}>
-                        {item.statsValue}
+                        {number}
                     </Text>
-                    <Text style={styles.title}>(+{item.increaseValue})</Text>
+                    <Text style={styles.title}>(+{increase})</Text>
                 </View>
-                <Text style={styles.title}>{item.title}</Text>
+                <Text style={styles.title}>{title}</Text>
             </View>
         </View>
     );
