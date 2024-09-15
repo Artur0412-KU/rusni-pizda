@@ -6,8 +6,6 @@ import DonateCarousel from '../../components/carousel/carousel';
 import { StyleSheet, Text } from 'react-native';
 import { useDispatch } from 'react-redux';
 import { addStats } from '../../redux/statsSlice';
-import { statistics, warInfo } from '../../api';
-
 export default function Home() {
     const dispatch = useDispatch();
     const test = 'test';
