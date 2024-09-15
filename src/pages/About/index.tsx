@@ -3,6 +3,7 @@ import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
 import Footer from '../../components/footer/Footer';
 import Links from '../../components/about-me/Links';
 import { linksData } from '../../data/data';
+import { usePushNotifications } from '../../hooks/usePushNotifications';
 
 export default function About() {
     return (

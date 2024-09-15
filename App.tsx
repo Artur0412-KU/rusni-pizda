@@ -6,12 +6,17 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Provider } from 'react-redux';
 import { store } from './src/redux/store';
 import About from './src/pages/About';
+import { usePushNotifications } from './src/hooks/usePushNotifications';
 
 const Tab = createBottomTabNavigator();
 
 export default function App() {
+    const { expoPushToken, notification } = usePushNotifications();
+
+    const data = JSON.stringify(notification, undefined, 2);
     return (
         <Provider store={store}>
+            {expoPushToken?.data}
             <NavigationContainer>
                 <Tab.Navigator
                     screenOptions={({ route }) => ({

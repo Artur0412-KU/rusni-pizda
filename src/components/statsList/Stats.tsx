@@ -37,7 +37,6 @@ export default function Stats() {
 
         const termsInfo = await terms();
         setTermsInfo(termsInfo);
-        console.log('terms:', termsInfo);
     };
 
     const closeActivityIndicator = async () => {
