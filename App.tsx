@@ -11,12 +11,8 @@ import { usePushNotifications } from './src/hooks/usePushNotifications';
 const Tab = createBottomTabNavigator();
 
 export default function App() {
-    const { expoPushToken, notification } = usePushNotifications();
-
-    const data = JSON.stringify(notification, undefined, 2);
     return (
         <Provider store={store}>
-            {expoPushToken?.data}
             <NavigationContainer>
                 <Tab.Navigator
                     screenOptions={({ route }) => ({
